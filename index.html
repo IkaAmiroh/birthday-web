@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Me 💖</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #111;
+            color: white;
+        }
+        #qrcode {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Scan QR ini ya 💕</h1>
+
+<div id="qrcode"></div>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "https://namakamu.github.io/birthday.html",
+        width: 200,
+        height: 200
+    });
+</script>
+
+</body>
+</html>
