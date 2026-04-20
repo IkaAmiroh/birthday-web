@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Scan Me 💖</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         body {
             text-align: center;
@@ -10,7 +12,7 @@
             background: #111;
             color: white;
         }
-        #qrcode {
+        img {
             margin-top: 50px;
         }
     </style>
@@ -19,15 +21,13 @@
 
 <h1>Scan QR ini ya 💕</h1>
 
-<div id="qrcode"></div>
+<!-- QR langsung dari API (lebih stabil & mudah discan) -->
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://ikaamiroh.github.io/birthday-web/birthday.html" alt="QR Code">
 
-<script>
-    new QRCode(document.getElementById("qrcode"), {
-        text:"https://ikaamiroh.github.io/birthday-web/birthday.html",
-        width: 200,
-        height: 200
-    });
-</script>
+<p>Kalau tidak bisa scan, klik link di bawah:</p>
+<a href="https://ikaamiroh.github.io/birthday-web/birthday.html" style="color:pink;">
+    Buka Ucapan 💖
+</a>
 
 </body>
 </html>
